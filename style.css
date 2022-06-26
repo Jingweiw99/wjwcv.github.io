@@ -1,0 +1,141 @@
+
+body{
+    font:14px/1.5 Arial;
+    color:#666;
+    background:#efefef;
+}
+a {
+    color: #999;
+    text-decoration: none;
+    border-bottom: 1px solid;
+  }
+strong {
+    font-weight: normal;
+    color: #f60;
+  }
+.page{
+    max-width:900px;
+    margin:0 auto;
+    background-color: #fff;
+    display:flex;
+    flex-wrap:wrap;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+/* 头部 */
+header{
+    background-color: #3c3c3c;
+    color:#fff;
+    width: 100%;
+    text-align: center;
+    padding:60px 0 5px 0;
+}
+header>h2,header>p{
+    margin-bottom:0px;
+    
+}
+/* 左边栏 */
+aside{
+    width: 240px;
+    border:1px solid #ccc;
+    position:relative;
+    padding-top:100px;
+}
+aside .photo{
+    align-items: center;
+    position:absolute;
+    top:-75px;
+    width:100%;
+    padding-left: 60px;
+   
+}
+aside .photo img{
+    width:120px;
+    height:150px;
+    border-radius:50%;
+}
+
+section{
+    border-bottom:1px solid #ccc;
+    margin:30px 20px 0 20px;
+    padding-bottom:20px;
+}
+section h2{
+    color:#5c99ca;
+    font-size:18px;
+    margin-bottom:15px;
+}
+section h3{
+    font-style: 16px;
+    color:#333;
+}
+section a{
+    color:#333;
+}
+.personal .item span:first-child{
+    display:inline-block;
+    width:70px
+}
+.personal .item span:last-child::before{
+    content:":";
+    margin-right:10px;
+}
+
+/* 专业技能栏 */
+.skills .item{
+    display:flex;
+    align-items:center;
+}
+.skills .keyword{
+    width:80px;
+}
+.skills .rule{
+    flex:1;
+    height: 4px;
+    background-color: #ccc;
+}
+.skills .rule i {
+    display: block;
+    width: 10%;
+    height: 4px;
+    background: #000;
+  }
+/* 联系方式*/
+.contact .item{
+    display:flex;
+    align-items:center;
+}
+.contact svg{
+    width:25px;
+    height:25px;
+}
+.contact.item span{
+    margin-left:10px;
+}
+
+
+/* 主要部分 */
+main{
+    
+     flex:1;
+    min-height:calc(100vh-162px);
+}
+
+
+
+@media(max-width:500px){
+    header{
+        padding-top:20px;
+        padding-bottom:90px;
+
+    }
+    aside{
+        width:100%;
+        padding-top:0px;
+    }
+    aside .photo img{
+        width:100px;
+        height:100px;
+    }
+
+}
